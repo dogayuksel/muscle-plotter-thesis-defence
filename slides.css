@@ -343,7 +343,7 @@ div#postamble
 
 #org-info-js_console-container
 {
-  border:1px solid #cccccc;
+  border:0px;
 }
 
 .org-info-js_search-highlight

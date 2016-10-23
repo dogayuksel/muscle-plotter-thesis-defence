@@ -4,12 +4,12 @@
 #+AUTHOR: Doga Yuksel
 #+EMAIL: dogayuksel@gmail.com
 #+LANGUAGE: en
-#+OPTIONS: num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
-#+INFOJS_OPT: toc:nil ltoc:nil view:slide mouse:underline up:https://dogayuksel.github.io/muscle-plotter-thesis-defence/ path:./org-info.js home:https://dogayuksel.github.io/muscle-plotter-thesis-defence/ buttons:nil
+#+OPTIONS: num:nil toc:2 \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
+#+INFOJS_OPT: toc:nil ltoc:nil view:slide mouse:underline up:https://dogayuksel.github.io/muscle-plotter-thesis-defence/ path:./org-info.js home:https://dogayuksel.github.io/muscle-plotter-thesis-defence/ buttons:t
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./slides.css" />
 :END:
 
-* introduction (4 mins)
+* 1) introduction (4 mins)
   Welcome to Muscle-plotter presentation.
 ** 1 minute teaser
    now what we have
@@ -37,7 +37,7 @@
      - ems difficulties
 
 
-* related work (5 mins)
+* 2) related work (5 mins)
 ** pen and paper stuff
    - teddy
    - mit actuated table
@@ -47,7 +47,7 @@
    affordance ++
 
 
-* implementation
+* 3) implementation
 ** pen and paper interface capable of input and output
   + Hardware Overview
     1. input
@@ -73,21 +73,21 @@
      Working with the human
 
 
-* user study
+* 4) user study
 ** study preparation
    Selection of curves
 ** evaluation and results
    results
 
 
-* application perpective pen and paper interactions
+* 5) application perpective pen and paper interactions
 ** development process
    design considerations
 ** wind tunnel, math plots, forms, filter design...
    wind tunnel
    filter design
 
-* limitations and future work
+* 6) limitations and future work
 ** ems difficulties
    ems machines haven't seem much improvement
 ** improve ems
@@ -100,5 +100,5 @@
 **** internal calibration
      adjust intensity with position feedback
 
-* Discussion?
+* 7) Discussion?
   Questions?
