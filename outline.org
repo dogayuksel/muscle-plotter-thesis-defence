@@ -99,8 +99,8 @@
     - repetative testing, 3 stages
 *** On Paper
    #+CAPTION: Sketches on Paper
-   #+ATTR_HTML: :alt Paper :title draw on paper :align left :width 90%
-   [[./img/foto_scratch.jpg]]
+   #+ATTR_HTML: :alt Range Sketches on Paper :title draw on paper :align left :width 90%
+   [[./img/fotoScratch.jpg]]
 *** Analysis
    #+CAPTION: Angle Range Analysis
    #+ATTR_HTML: :alt Angle Range :title range :align left :width 90%
