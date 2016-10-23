@@ -5,9 +5,7 @@
 #+EMAIL: dogayuksel@gmail.com
 #+LANGUAGE: en
 #+OPTIONS: num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
-#+INFOJS_OPT: toc:nil ltoc:nil view:slide mouse:underline
-#+INFOJS_OPT: up:http://localhost:8000 path:./org-info.js
-#+INFOJS_OPT: home:http://localhost:8000 buttons:nil
+#+INFOJS_OPT: toc:nil ltoc:nil view:slide mouse:underline up:https://dogayuksel.github.io/muscle-plotter-thesis-defence/ path:./org-info.js home:https://dogayuksel.github.io/muscle-plotter-thesis-defence/ buttons:nil
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./slides.css" />
 :END:
 
