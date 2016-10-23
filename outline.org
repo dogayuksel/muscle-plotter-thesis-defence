@@ -1,0 +1,106 @@
+:SETUP:
+#+STARTUP: align fold nodlcheck hidestars oddeven lognotestate
+#+TITLE: Muscle-Plotter
+#+AUTHOR: Doga Yuksel
+#+EMAIL: dogayuksel@gmail.com
+#+LANGUAGE: en
+#+OPTIONS: num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
+#+INFOJS_OPT: toc:nil ltoc:nil view:slide mouse:underline
+#+INFOJS_OPT: up:http://localhost:8000 path:./org-info.js
+#+INFOJS_OPT: home:http://localhost:8000 buttons:nil
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./slides.css" />
+:END:
+
+* introduction (4 mins)
+  Welcome to Muscle-plotter presentation.
+** 1 minute teaser
+   now what we have
+   future what it can be
+** 1 minute what it is
+   wearable devices
+** 1 minute - show the video clarify
+   youtube/muscleplotter
+** Overview
+*** Agenda
+**** related work
+     examples
+**** implementation
+***** pen and paper interface capable of input and output
+     - handwriting recognition and spatial interactions
+     - closed control loop for output 
+**** user study
+     - study preparation
+     - evaluation and results
+**** application perpective pen and paper interactions
+     - development process
+     - windtunnel, math plots, forms, filter design
+**** limitations and future work
+     - improve ems
+     - ems difficulties
+
+
+* related work (5 mins)
+** pen and paper stuff
+   - teddy
+   - mit actuated table
+
+** ems stuff
+   pose IO
+   affordance ++
+
+
+* implementation
+** pen and paper interface capable of input and output
+  + Hardware Overview
+    1. input
+    2. output
+  + Software
+    1. control
+    2. application api
+    
+*** Anoto Pen and Paper
+    #+CAPTION: Anoto Pen
+    #+ATTR_HTML: :alt anoto pen/paper image :title Anoto :align left :width 30%
+    [[./img/anoto.jpg]]
+*** HASOMED EMS Machine
+    8 Channel 400Hz
+*** handwriting recognition and spatial interactions
+    tesseract
+*** closed control loop for output
+**** 1st Step
+     Finding the proportion relation
+**** 2nd Step
+     System Limitations
+**** 3nd Step
+     Working with the human
+
+
+* user study
+** study preparation
+   Selection of curves
+** evaluation and results
+   results
+
+
+* application perpective pen and paper interactions
+** development process
+   design considerations
+** wind tunnel, math plots, forms, filter design...
+   wind tunnel
+   filter design
+
+* limitations and future work
+** ems difficulties
+   ems machines haven't seem much improvement
+** improve ems
+   muscle Sync
+*** Hardware level improvements in next years
+**** array of electrodes
+     ease of use and flexibility
+**** internal positioning model
+     compansate for orientation changes
+**** internal calibration
+     adjust intensity with position feedback
+
+* Discussion?
+  Questions?
