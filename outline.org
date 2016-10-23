@@ -9,15 +9,17 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./slides.css" />
 :END:
 
-* 1) introduction (4 mins)
-  Welcome to Muscle-plotter presentation.
-** 1 minute teaser
-   now what we have
-   future what it can be
-** 1 minute what it is
-   wearable devices
-** 1 minute - show the video clarify
-   youtube/muscleplotter
+* 1) Muscle-Plotter
+   - is an interactive system
+   - based on electrical muscle stimulation
+   - produces spacial output
+** 
+   #+ATTR_HTML: :class highlight
+   builds on previous EMS systems to create an interface that enables elaborate sensemaking tasks
+** 
+   #+ATTR_HTML: :class highlight
+   provides such an interface in very small form factors
+** 
 
 #+BEGIN_HTML
 <video width="640" height="480" loop autoplay muted>
@@ -56,7 +58,7 @@
 
 * 3) implementation
 ** pen and paper interface for input and output
-  + Hardware Overview
+  + Hardware
     1. anoto pen for paper
     2. electrical muscle stimulation
   + Software
@@ -86,13 +88,28 @@
 *** handwriting recognition and spatial interactions
     tesseract
 *** closed control loop for output
-**** 1st Step
-     Finding the proportion relation
-**** 2nd Step
-     System Limitations
-**** 3nd Step
-     Working with the human
-
+**** Proportional Controller
+     - Only one channel is active at a given time
+     - signal intensity is mapped to min and max situmulation values
+**** Muscles explode
+     - more chaos then control
+**** Finding a reliable range
+     - Active situmulation on both sides
+     - repetative testing, 3 stages
+**** On Paper
+    #+CAPTION: Sketches on Paper
+    #+ATTR_HTML: :alt Paper :title draw on paper :align left :width 90%
+    [[./img/photo_scratch.png]]
+**** Analysis
+    #+CAPTION: Angle Range Analysis
+    #+ATTR_HTML: :alt Angle Range :title range :align left :width 90%
+    [[./img/web-viz.png]]
+**** Hardware Limitations
+     - Anoto, 10 samples each second
+     - .1s delay
+     - adjust control loop to act for every 10 anoto samples
+**** Human Operator at the end of the line     
+     Additional channel for brake
 
 * 4) user study
 ** study preparation

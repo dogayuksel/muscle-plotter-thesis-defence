@@ -77,6 +77,12 @@ img, a img
   top:0px;
 }
 
+.highlight
+{
+  padding-top:3em;
+  font-size:32px;
+}
+
 .figure
 {
   display:flex;
