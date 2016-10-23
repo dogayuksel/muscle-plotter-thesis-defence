@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-10-23 Sun 13:40 -->
+<!-- 2016-10-23 Sun 17:45 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Muscle-Plotter</title>
@@ -239,41 +239,43 @@ for the JavaScript code in this tag.
 <li><a href="#orgheadline14">ems stuff</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline24">3) implementation</a>
+<li><a href="#orgheadline26">3) implementation</a>
 <ul>
-<li><a href="#orgheadline16">pen and paper interface capable of input and output</a>
+<li><a href="#orgheadline16">pen and paper interface for input and output</a>
 <ul>
 <li><a href="#orgheadline17">Anoto Pen and Paper</a></li>
 <li><a href="#orgheadline18">HASOMED EMS Machine</a></li>
-<li><a href="#orgheadline19">handwriting recognition and spatial interactions</a></li>
-<li><a href="#orgheadline23">closed control loop for output</a></li>
+<li><a href="#orgheadline19">Pad Placement</a></li>
+<li><a href="#orgheadline20">Pad Placement</a></li>
+<li><a href="#orgheadline21">handwriting recognition and spatial interactions</a></li>
+<li><a href="#orgheadline25">closed control loop for output</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgheadline27">4) user study</a>
+<li><a href="#orgheadline29">4) user study</a>
 <ul>
-<li><a href="#orgheadline25">study preparation</a></li>
-<li><a href="#orgheadline26">evaluation and results</a></li>
+<li><a href="#orgheadline27">study preparation</a></li>
+<li><a href="#orgheadline28">evaluation and results</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline30">5) application perpective pen and paper interactions</a>
+<li><a href="#orgheadline32">5) application perpective pen and paper interactions</a>
 <ul>
-<li><a href="#orgheadline28">development process</a></li>
-<li><a href="#orgheadline29">wind tunnel, math plots, forms, filter design&#x2026;</a></li>
+<li><a href="#orgheadline30">development process</a></li>
+<li><a href="#orgheadline31">wind tunnel, math plots, forms, filter design&#x2026;</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline37">6) limitations and future work</a>
+<li><a href="#orgheadline39">6) limitations and future work</a>
 <ul>
-<li><a href="#orgheadline31">ems difficulties</a></li>
-<li><a href="#orgheadline32">improve ems</a>
+<li><a href="#orgheadline33">ems difficulties</a></li>
+<li><a href="#orgheadline34">improve ems</a>
 <ul>
-<li><a href="#orgheadline36">Hardware level improvements in next years</a></li>
+<li><a href="#orgheadline38">Hardware level improvements in next years</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgheadline38">7) Discussion?</a></li>
+<li><a href="#orgheadline40">7) Discussion?</a></li>
 </ul>
 </div>
 </div>
@@ -308,8 +310,13 @@ wearable devices
 <p>
 youtube/muscleplotter
 </p>
+
+<video width="640" height="480" loop autoplay muted>
+  <source src="img/plot-a-line.mp4" type="video/mp4">
+</video>
 </div>
 </div>
+
 <div id="outline-container-orgheadline12" class="outline-3">
 <h3 id="orgheadline12">Overview</h3>
 <div class="outline-text-3" id="text-orgheadline12">
@@ -375,21 +382,21 @@ affordance ++
 </div>
 
 
-<div id="outline-container-orgheadline24" class="outline-2">
-<h2 id="orgheadline24">3) implementation</h2>
-<div class="outline-text-2" id="text-orgheadline24">
+<div id="outline-container-orgheadline26" class="outline-2">
+<h2 id="orgheadline26">3) implementation</h2>
+<div class="outline-text-2" id="text-orgheadline26">
 </div><div id="outline-container-orgheadline16" class="outline-3">
-<h3 id="orgheadline16">pen and paper interface capable of input and output</h3>
+<h3 id="orgheadline16">pen and paper interface for input and output</h3>
 <div class="outline-text-3" id="text-orgheadline16">
 <ul class="org-ul">
 <li>Hardware Overview
 <ol class="org-ol">
-<li>input</li>
-<li>output</li>
+<li>anoto pen for paper</li>
+<li>electrical muscle stimulation</li>
 </ol></li>
 <li>Software
 <ol class="org-ol">
-<li>control</li>
+<li>control loop</li>
 <li>application api</li>
 </ol></li>
 </ul>
@@ -410,32 +417,67 @@ affordance ++
 <h4 id="orgheadline18">HASOMED EMS Machine</h4>
 <div class="outline-text-4" id="text-orgheadline18">
 <p>
-8 Channel 400Hz
+8 Channels sharing upto 400 pulses per second 
 </p>
+
+<div class="figure">
+<p><img src="./img/rehastim.png" alt="EMS machine" title="EMS Machine" align="left" width="30%" />
+</p>
+<p><span class="figure-number">Figure 2:</span> EMS Machine</p>
+</div>
 </div>
 </div>
 <div id="outline-container-orgheadline19" class="outline-4">
-<h4 id="orgheadline19">handwriting recognition and spatial interactions</h4>
+<h4 id="orgheadline19">Pad Placement</h4>
 <div class="outline-text-4" id="text-orgheadline19">
+<p>
+Horizontal axis
+</p>
+
+<div class="figure">
+<p><img src="./img/leftandright.png" alt="Left and Right" title="horizontal" align="left" width="90%" />
+</p>
+<p><span class="figure-number">Figure 3:</span> Left and Right</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgheadline20" class="outline-4">
+<h4 id="orgheadline20">Pad Placement</h4>
+<div class="outline-text-4" id="text-orgheadline20">
+<p>
+Vertical axis
+</p>
+
+<div class="figure">
+<p><img src="./img/upanddown.png" alt="Up and down" title="vertical" align="left" width="90%" />
+</p>
+<p><span class="figure-number">Figure 4:</span> Up and Down</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline21" class="outline-4">
+<h4 id="orgheadline21">handwriting recognition and spatial interactions</h4>
+<div class="outline-text-4" id="text-orgheadline21">
 <p>
 tesseract
 </p>
 </div>
 </div>
-<div id="outline-container-orgheadline23" class="outline-4">
-<h4 id="orgheadline23">closed control loop for output</h4>
-<div class="outline-text-4" id="text-orgheadline23">
-</div><ul class="org-ul"><li><a id="orgheadline20"></a>1st Step<br  /><div class="outline-text-5" id="text-orgheadline20">
+<div id="outline-container-orgheadline25" class="outline-4">
+<h4 id="orgheadline25">closed control loop for output</h4>
+<div class="outline-text-4" id="text-orgheadline25">
+</div><ul class="org-ul"><li><a id="orgheadline22"></a>1st Step<br  /><div class="outline-text-5" id="text-orgheadline22">
 <p>
 Finding the proportion relation
 </p>
 </div></li>
-<li><a id="orgheadline21"></a>2nd Step<br  /><div class="outline-text-5" id="text-orgheadline21">
+<li><a id="orgheadline23"></a>2nd Step<br  /><div class="outline-text-5" id="text-orgheadline23">
 <p>
 System Limitations
 </p>
 </div></li>
-<li><a id="orgheadline22"></a>3nd Step<br  /><div class="outline-text-5" id="text-orgheadline22">
+<li><a id="orgheadline24"></a>3nd Step<br  /><div class="outline-text-5" id="text-orgheadline24">
 <p>
 Working with the human
 </p>
@@ -445,20 +487,20 @@ Working with the human
 </div>
 
 
-<div id="outline-container-orgheadline27" class="outline-2">
-<h2 id="orgheadline27">4) user study</h2>
-<div class="outline-text-2" id="text-orgheadline27">
-</div><div id="outline-container-orgheadline25" class="outline-3">
-<h3 id="orgheadline25">study preparation</h3>
-<div class="outline-text-3" id="text-orgheadline25">
+<div id="outline-container-orgheadline29" class="outline-2">
+<h2 id="orgheadline29">4) user study</h2>
+<div class="outline-text-2" id="text-orgheadline29">
+</div><div id="outline-container-orgheadline27" class="outline-3">
+<h3 id="orgheadline27">study preparation</h3>
+<div class="outline-text-3" id="text-orgheadline27">
 <p>
 Selection of curves
 </p>
 </div>
 </div>
-<div id="outline-container-orgheadline26" class="outline-3">
-<h3 id="orgheadline26">evaluation and results</h3>
-<div class="outline-text-3" id="text-orgheadline26">
+<div id="outline-container-orgheadline28" class="outline-3">
+<h3 id="orgheadline28">evaluation and results</h3>
+<div class="outline-text-3" id="text-orgheadline28">
 <p>
 results
 </p>
@@ -467,20 +509,20 @@ results
 </div>
 
 
-<div id="outline-container-orgheadline30" class="outline-2">
-<h2 id="orgheadline30">5) application perpective pen and paper interactions</h2>
-<div class="outline-text-2" id="text-orgheadline30">
-</div><div id="outline-container-orgheadline28" class="outline-3">
-<h3 id="orgheadline28">development process</h3>
-<div class="outline-text-3" id="text-orgheadline28">
+<div id="outline-container-orgheadline32" class="outline-2">
+<h2 id="orgheadline32">5) application perpective pen and paper interactions</h2>
+<div class="outline-text-2" id="text-orgheadline32">
+</div><div id="outline-container-orgheadline30" class="outline-3">
+<h3 id="orgheadline30">development process</h3>
+<div class="outline-text-3" id="text-orgheadline30">
 <p>
 design considerations
 </p>
 </div>
 </div>
-<div id="outline-container-orgheadline29" class="outline-3">
-<h3 id="orgheadline29">wind tunnel, math plots, forms, filter design&#x2026;</h3>
-<div class="outline-text-3" id="text-orgheadline29">
+<div id="outline-container-orgheadline31" class="outline-3">
+<h3 id="orgheadline31">wind tunnel, math plots, forms, filter design&#x2026;</h3>
+<div class="outline-text-3" id="text-orgheadline31">
 <p>
 wind tunnel
 filter design
@@ -489,38 +531,38 @@ filter design
 </div>
 </div>
 
-<div id="outline-container-orgheadline37" class="outline-2">
-<h2 id="orgheadline37">6) limitations and future work</h2>
-<div class="outline-text-2" id="text-orgheadline37">
-</div><div id="outline-container-orgheadline31" class="outline-3">
-<h3 id="orgheadline31">ems difficulties</h3>
-<div class="outline-text-3" id="text-orgheadline31">
+<div id="outline-container-orgheadline39" class="outline-2">
+<h2 id="orgheadline39">6) limitations and future work</h2>
+<div class="outline-text-2" id="text-orgheadline39">
+</div><div id="outline-container-orgheadline33" class="outline-3">
+<h3 id="orgheadline33">ems difficulties</h3>
+<div class="outline-text-3" id="text-orgheadline33">
 <p>
 ems machines haven't seem much improvement
 </p>
 </div>
 </div>
-<div id="outline-container-orgheadline32" class="outline-3">
-<h3 id="orgheadline32">improve ems</h3>
-<div class="outline-text-3" id="text-orgheadline32">
+<div id="outline-container-orgheadline34" class="outline-3">
+<h3 id="orgheadline34">improve ems</h3>
+<div class="outline-text-3" id="text-orgheadline34">
 <p>
 muscle Sync
 </p>
 </div>
-<div id="outline-container-orgheadline36" class="outline-4">
-<h4 id="orgheadline36">Hardware level improvements in next years</h4>
-<div class="outline-text-4" id="text-orgheadline36">
-</div><ul class="org-ul"><li><a id="orgheadline33"></a>array of electrodes<br  /><div class="outline-text-5" id="text-orgheadline33">
+<div id="outline-container-orgheadline38" class="outline-4">
+<h4 id="orgheadline38">Hardware level improvements in next years</h4>
+<div class="outline-text-4" id="text-orgheadline38">
+</div><ul class="org-ul"><li><a id="orgheadline35"></a>array of electrodes<br  /><div class="outline-text-5" id="text-orgheadline35">
 <p>
 ease of use and flexibility
 </p>
 </div></li>
-<li><a id="orgheadline34"></a>internal positioning model<br  /><div class="outline-text-5" id="text-orgheadline34">
+<li><a id="orgheadline36"></a>internal positioning model<br  /><div class="outline-text-5" id="text-orgheadline36">
 <p>
 compansate for orientation changes
 </p>
 </div></li>
-<li><a id="orgheadline35"></a>internal calibration<br  /><div class="outline-text-5" id="text-orgheadline35">
+<li><a id="orgheadline37"></a>internal calibration<br  /><div class="outline-text-5" id="text-orgheadline37">
 <p>
 adjust intensity with position feedback
 </p>
@@ -529,9 +571,9 @@ adjust intensity with position feedback
 </div>
 </div>
 
-<div id="outline-container-orgheadline38" class="outline-2">
-<h2 id="orgheadline38">7) Discussion?</h2>
-<div class="outline-text-2" id="text-orgheadline38">
+<div id="outline-container-orgheadline40" class="outline-2">
+<h2 id="orgheadline40">7) Discussion?</h2>
+<div class="outline-text-2" id="text-orgheadline40">
 <p>
 Questions?
 </p>
@@ -540,7 +582,7 @@ Questions?
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Doga Yuksel</p>
-<p class="date">Created: 2016-10-23 Sun 13:40</p>
+<p class="date">Created: 2016-10-23 Sun 17:45</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

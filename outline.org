@@ -18,6 +18,13 @@
    wearable devices
 ** 1 minute - show the video clarify
    youtube/muscleplotter
+
+#+BEGIN_HTML
+<video width="640" height="480" loop autoplay muted>
+  <source src="img/plot-a-line.mp4" type="video/mp4">
+</video>
+#+END_HTML
+
 ** Overview
 *** Agenda
 **** related work
@@ -48,12 +55,12 @@
 
 
 * 3) implementation
-** pen and paper interface capable of input and output
+** pen and paper interface for input and output
   + Hardware Overview
-    1. input
-    2. output
+    1. anoto pen for paper
+    2. electrical muscle stimulation
   + Software
-    1. control
+    1. control loop
     2. application api
     
 *** Anoto Pen and Paper
@@ -61,7 +68,21 @@
     #+ATTR_HTML: :alt anoto pen/paper image :title Anoto :align left :width 30%
     [[./img/anoto.jpg]]
 *** HASOMED EMS Machine
-    8 Channel 400Hz
+    8 Channels sharing upto 400 pulses per second
+    #+CAPTION: EMS Machine
+    #+ATTR_HTML: :alt EMS machine :title EMS Machine :align left :width 30%
+    [[./img/rehastim.png]]
+*** Pad Placement
+    Horizontal axis
+    #+CAPTION: Left and Right
+    #+ATTR_HTML: :alt Left and Right :title horizontal :align left :width 90%
+    [[./img/leftandright.png]]
+*** Pad Placement
+    Vertical axis
+    #+CAPTION: Up and Down
+    #+ATTR_HTML: :alt Up and down :title vertical :align left :width 90%
+    [[./img/upanddown.png]]
+
 *** handwriting recognition and spatial interactions
     tesseract
 *** closed control loop for output
