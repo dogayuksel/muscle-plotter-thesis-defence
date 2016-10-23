@@ -88,34 +88,49 @@
 *** handwriting recognition and spatial interactions
     tesseract
 *** closed control loop for output
-**** Proportional Controller
-     - Only one channel is active at a given time
-     - signal intensity is mapped to min and max situmulation values
-**** Muscles explode
-     - more chaos then control
-**** Finding a reliable range
-     - Active situmulation on both sides
-     - repetative testing, 3 stages
-**** On Paper
-    #+CAPTION: Sketches on Paper
-    #+ATTR_HTML: :alt Paper :title draw on paper :align left :width 90%
-    [[./img/photo_scratch.png]]
-**** Analysis
-    #+CAPTION: Angle Range Analysis
-    #+ATTR_HTML: :alt Angle Range :title range :align left :width 90%
-    [[./img/web-viz.png]]
-**** Hardware Limitations
-     - Anoto, 10 samples each second
-     - .1s delay
-     - adjust control loop to act for every 10 anoto samples
-**** Human Operator at the end of the line     
-     Additional channel for brake
+    non linear system
+*** Proportional Controller
+    - Only one channel is active at a given time
+    - signal intensity is mapped to min and max situmulation values
+*** Muscles explode
+    - more chaos then control
+*** Finding a reliable range
+    - Active situmulation on both sides
+    - repetative testing, 3 stages
+*** On Paper
+   #+CAPTION: Sketches on Paper
+   #+ATTR_HTML: :alt Paper :title draw on paper :align left :width 90%
+   [[./img/foto_scratch.jpg]]
+*** Analysis
+   #+CAPTION: Angle Range Analysis
+   #+ATTR_HTML: :alt Angle Range :title range :align left :width 90%
+   [[./img/web-viz.png]]
+*** Hardware Limitations
+    - Anoto, 10 samples each second
+    - .1s delay
+    - adjust control loop to act for every 10 anoto samples
+*** Designing for the Human Operator at the end of the line
+    Additional channel for brake
+
 
 * 4) user study
 ** study preparation
    Selection of curves
+   #+CAPTION: User Setup
+   #+ATTR_HTML: :alt User Setup :align left :width 90%
+   [[./img/userstudy/setup.png]]
 ** evaluation and results
-   results
+   #+CAPTION: Results All
+   #+ATTR_HTML: :alt Results all :align left :width 90%
+   [[./img/userstudy/resultsAll.png]]
+** error versus plot duration
+   #+CAPTION: Accuracy and duration
+   #+ATTR_HTML: :alt Results all :align left :width 90%
+   [[./img/userstudy/accuracyDuration.png]]
+** frequency analysis
+   #+CAPTION: Frequency Domain Analysis
+   #+ATTR_HTML: :alt Frequency Domain Analysis :align left :width 90%
+   [[./img/userstudy/fft2.png]]
 
 
 * 5) application perpective pen and paper interactions
