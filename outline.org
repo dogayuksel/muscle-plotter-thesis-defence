@@ -167,8 +167,14 @@
 
 
 * 5) application perpective pen and paper interactions
-** development process
-   design considerations
+** wind tunnel simulator
+
+#+BEGIN_HTML
+<video width="640" height="480" controls>
+  <source src="img/windtunnelapp.mp4" type="video/mp4">
+</video>
+#+END_HTML
+
 ** wind tunnel, math plots, forms, filter design...
    wind tunnel
    filter design
