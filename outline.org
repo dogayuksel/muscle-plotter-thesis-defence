@@ -14,8 +14,17 @@
    - based on electrical muscle stimulation
    - produces spacial output
 
-** 
-   [[https://hpi.de/baudisch/projects/muscleplotter.html]]
+** major project and the team
+    #+CAPTION: Project Team
+    #+ATTR_HTML: :alt Team :title Anoto :align left :width 80%
+    [[./img/team.png]]
+    [[https://hpi.de/baudisch/projects/muscleplotter.html]]
+** uist2016
+    #+CAPTION: Demo Session
+    #+ATTR_HTML: :alt UIST Demo :title Anoto :align left :width 80%
+    [[./img/uist2016.jpg]]
+** open repository
+   [[https://github.com/PedroLopes/muscle-plotter]]
 ** 
    #+ATTR_HTML: :class highlight
    builds on previous EMS systems to create an interface that enables elaborate sense-making tasks
@@ -30,27 +39,6 @@
 </video>
 #+END_HTML
 
-** Overview
-*** Agenda
-**** related work
-     examples
-**** implementation
-     - System Components
-       + Anoto Pen
-       + EMS Machine
-     - Control Loop
-**** user study
-     - study preparation
-     - evaluation and results
-**** application perspective pen and paper interactions
-     - development process
-     - wind tunnel, math plots, forms, filter design
-**** limitations and future work
-     - improve ems
-     - ems difficulties
-**** discussion
-
-
 * 2) related work
 
 ** controlling hand poses
@@ -63,7 +51,7 @@
     #+ATTR_HTML: :alt cruise control :title vertical :align left :width 90%
     [[./img/cruisecontrol.png]]
 
-** fluid interactions
+** crossing interfaces for fluid interactions with a digital pen
    [[http://www.cs.umd.edu/hcil/crossy/]]
 
 ** gestures for interactive paper
@@ -99,7 +87,9 @@
     [[./img/upanddown.png]]
 
 *** handwriting recognition and spatial interactions
-    Tesseract
+    #+CAPTION: Handwriting Recognition
+    #+ATTR_HTML: :alt drawing recognition :title vertical :align left :width 90%
+    [[./img/recognition.png]]
 *** closed control loop for output
     handling non-linear response
 
@@ -112,7 +102,7 @@
 *** Proportional Controller
     - Only one channel is active at a given time
     - signal intensity is mapped to min and max stimulation values
-*** Muscles explode
+*** Muscles respond non-linearly
     - chaos > control
 *** Spring Mass Model
     #+CAPTION: a simple model for the arm
@@ -218,7 +208,7 @@
 
 * 6) limitations and future work
 ** ems difficulties
-   ems machines haven't seem much improvement
+   ems machines haven't seen much improvement
 ** improve ems
    muscle Sync
 *** Hardware level improvements in next years
@@ -228,8 +218,6 @@
      compensate for orientation changes
 **** internal calibration
      adjust intensity with position feedback
-** open repository
-   [[https://github.com/PedroLopes/muscle-plotter]]
 
 * 7) Discussion?
   Questions?
