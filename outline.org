@@ -23,8 +23,6 @@
     #+CAPTION: Demo Session
     #+ATTR_HTML: :alt UIST Demo :title Anoto :align left :width 80%
     [[./img/uist2016.jpg]]
-** open repository
-   [[https://github.com/PedroLopes/muscle-plotter]]
 ** 
    #+ATTR_HTML: :class highlight
    builds on previous EMS systems to create an interface that enables elaborate sense-making tasks
