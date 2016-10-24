@@ -175,10 +175,46 @@
 </video>
 #+END_HTML
 
-** wind tunnel, math plots, forms, filter design...
-   wind tunnel
-   filter design
+** Widgets
+   - scale
+   - x-y graph
+   - canvas
+   - selectors
 
+** filter design
+   #+CAPTION: rc filter design app
+   #+ATTR_HTML: :alt Filter Design App :align left :width 90%
+   [[./img/apps/rcfilter.jpg]]
+
+** optics
+   #+CAPTION: optics
+   #+ATTR_HTML: :alt Optics app :align left :width 90%
+   [[./img/apps/optics.jpg]]
+
+** math functions - plot
+   #+CAPTION: plotting math functions
+   #+ATTR_HTML: :alt plotting math function :align left :width 90%
+   [[./img/apps/math1.jpg]]
+
+** math functions - get integral
+   #+CAPTION: integral of plot
+   #+ATTR_HTML: :alt integral of function :align left :width 90%
+   [[./img/apps/math2.jpg]]
+
+** multiple choise - query
+   #+CAPTION: output from multiple choise
+   #+ATTR_HTML: :alt output from multiple choise :align left :width 90%
+   [[./img/apps/multi1.jpg]]
+
+** multiple choise - select
+   #+CAPTION: input to multiple choise
+   #+ATTR_HTML: :alt input to multiple choise :align left :width 90%
+   [[./img/apps/multi2.jpg]]
+
+** bar charts
+   #+CAPTION: plot bar chart
+   #+ATTR_HTML: :alt plot bar chart choise :align left :width 90%
+   [[./img/apps/barchart.jpg]]
 
 * 6) limitations and future work
 ** ems difficulties
