@@ -68,6 +68,10 @@
     #+CAPTION: Anoto Pen
     #+ATTR_HTML: :alt Anoto pen/paper image :title Anoto :align left :width 30%
     [[./img/anoto.jpg]]
+*** handwriting recognition and spatial interactions
+    #+CAPTION: Handwriting Recognition
+    #+ATTR_HTML: :alt drawing recognition :title vertical :align left :width 90%
+    [[./img/recognition.png]]
 *** HASOMED EMS Machine
     8 Channels sharing up to 400 pulses per second
     #+CAPTION: EMS Machine
@@ -84,10 +88,7 @@
     #+ATTR_HTML: :alt Up and down :title vertical :align left :width 90%
     [[./img/upanddown.png]]
 
-*** handwriting recognition and spatial interactions
-    #+CAPTION: Handwriting Recognition
-    #+ATTR_HTML: :alt drawing recognition :title vertical :align left :width 90%
-    [[./img/recognition.png]]
+
 *** closed control loop for output
     handling non-linear response
 
