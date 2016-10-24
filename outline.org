@@ -186,7 +186,9 @@
      compansate for orientation changes
 **** internal calibration
      adjust intensity with position feedback
-
+** open repository
+   [[https://github.com/PedroLopes/muscle-plotter]]
 
 * 7) Discussion?
   Questions?
+
