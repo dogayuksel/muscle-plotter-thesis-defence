@@ -1,7 +1,7 @@
 :SETUP:
 #+STARTUP: align fold nodlcheck hidestars oddeven lognotestate
 #+TITLE: Muscle-Plotter
-#+AUTHOR: Doga Yuksel
+#+AUTHOR: Doğa Yüksel
 #+EMAIL: dogayuksel@gmail.com
 #+LANGUAGE: en
 #+OPTIONS: num:nil toc:2 \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
@@ -18,7 +18,7 @@
    [[https://hpi.de/baudisch/projects/muscleplotter.html]]
 ** 
    #+ATTR_HTML: :class highlight
-   builds on previous EMS systems to create an interface that enables elaborate sensemaking tasks
+   builds on previous EMS systems to create an interface that enables elaborate sense-making tasks
 ** 
    #+ATTR_HTML: :class highlight
    provides such an interface in very small form factors
@@ -42,9 +42,9 @@
 **** user study
      - study preparation
      - evaluation and results
-**** application perpective pen and paper interactions
+**** application perspective pen and paper interactions
      - development process
-     - windtunnel, math plots, forms, filter design
+     - wind tunnel, math plots, forms, filter design
 **** limitations and future work
      - improve ems
      - ems difficulties
@@ -72,18 +72,18 @@
 * 3) implementation
 ** pen and paper interface for input and output
   + Hardware
-    1. anoto pen for paper
+    1. Anoto pen for paper
     2. electrical muscle stimulation
   + Software
     1. control loop
-    2. application api
+    2. application API
     
 *** Anoto Pen and Paper
     #+CAPTION: Anoto Pen
-    #+ATTR_HTML: :alt anoto pen/paper image :title Anoto :align left :width 30%
+    #+ATTR_HTML: :alt Anoto pen/paper image :title Anoto :align left :width 30%
     [[./img/anoto.jpg]]
 *** HASOMED EMS Machine
-    8 Channels sharing upto 400 pulses per second
+    8 Channels sharing up to 400 pulses per second
     #+CAPTION: EMS Machine
     #+ATTR_HTML: :alt EMS machine :title EMS Machine :align left :width 60%
     [[./img/rehastim.png]]
@@ -99,7 +99,7 @@
     [[./img/upanddown.png]]
 
 *** handwriting recognition and spatial interactions
-    tesseract
+    Tesseract
 *** closed control loop for output
     handling non-linear response
 
@@ -111,7 +111,7 @@
 
 *** Proportional Controller
     - Only one channel is active at a given time
-    - signal intensity is mapped to min and max situmulation values
+    - signal intensity is mapped to min and max stimulation values
 *** Muscles explode
     - chaos > control
 *** Spring Mass Model
@@ -119,7 +119,7 @@
     #+ATTR_HTML: :alt Spring Mass Model :title vertical :align left :width 90%
     [[./img/spring-mass-model.png]]
 *** Finding a reliable range
-    - Active sitimulation on both sides
+    - Active stimulation on both sides
     - randomly testing for range of values
 *** On Paper
    #+CAPTION: test results on paper
@@ -132,9 +132,9 @@
 *** Hardware Limitations
     - Anoto, 70 samples each second
     - 0.1 second delay
-    - adjust control loop to act for every 7 + ~3 anoto samples
+    - adjust control loop to act for every 7 + ~3 Anoto samples
     - more consistent speed calculations
-*** Delay Compansation
+*** Delay Compensation
     Forward momentum
     #+CAPTION: Control Loop in Action
     #+ATTR_HTML: :alt Control Loop :title vertical :align left :width 90%
@@ -166,7 +166,7 @@
    [[./img/userstudy/fft2.png]]
 
 
-* 5) application perpective pen and paper interactions
+* 5) application perspective pen and paper interactions
 ** wind tunnel simulator
 
 #+BEGIN_HTML
@@ -201,19 +201,19 @@
    #+ATTR_HTML: :alt integral of function :align left :width 90%
    [[./img/apps/math2.jpg]]
 
-** multiple choise - query
-   #+CAPTION: output from multiple choise
-   #+ATTR_HTML: :alt output from multiple choise :align left :width 90%
+** multiple choice - query
+   #+CAPTION: output from multiple choice
+   #+ATTR_HTML: :alt output from multiple choice :align left :width 90%
    [[./img/apps/multi1.jpg]]
 
-** multiple choise - select
-   #+CAPTION: input to multiple choise
-   #+ATTR_HTML: :alt input to multiple choise :align left :width 90%
+** multiple choice - select
+   #+CAPTION: input to multiple choice
+   #+ATTR_HTML: :alt input to multiple choice :align left :width 90%
    [[./img/apps/multi2.jpg]]
 
 ** bar charts
    #+CAPTION: plot bar chart
-   #+ATTR_HTML: :alt plot bar chart choise :align left :width 90%
+   #+ATTR_HTML: :alt plot bar chart :align left :width 90%
    [[./img/apps/barchart.jpg]]
 
 * 6) limitations and future work
@@ -225,7 +225,7 @@
 **** array of electrodes
      ease of use and flexibility
 **** internal positioning model
-     compansate for orientation changes
+     compensate for orientation changes
 **** internal calibration
      adjust intensity with position feedback
 ** open repository
