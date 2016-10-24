@@ -18,7 +18,8 @@ code, pre
 
 h1,h2,h3,h4,h5,h6
 {
-  margin: 0;
+  margin:0;
+  margin-bottom:1em;
   font-family:"DejaVu Sans",Verdana,Arial,sans-serif;
   font-size:26pt;
   font-weight:bold;
@@ -79,6 +80,8 @@ img, a img
 
 .highlight
 {
+  margin: auto;
+  max-width: 520px;
   padding-top:3em;
   font-size:32px;
 }

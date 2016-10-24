@@ -9,10 +9,13 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./slides.css" />
 :END:
 
-* 1) Muscle-Plotter
+* 1) muscle-plotter
    - is an interactive system
    - based on electrical muscle stimulation
    - produces spacial output
+
+** 
+   [[https://hpi.de/baudisch/projects/muscleplotter.html]]
 ** 
    #+ATTR_HTML: :class highlight
    builds on previous EMS systems to create an interface that enables elaborate sensemaking tasks
@@ -32,9 +35,10 @@
 **** related work
      examples
 **** implementation
-***** pen and paper interface capable of input and output
-     - handwriting recognition and spatial interactions
-     - closed control loop for output 
+     - System Components
+       + Anoto Pen
+       + EMS Machine
+     - Control Loop
 **** user study
      - study preparation
      - evaluation and results
@@ -44,17 +48,26 @@
 **** limitations and future work
      - improve ems
      - ems difficulties
+**** discussion
 
 
-* 2) related work (5 mins)
-** pen and paper stuff
-   - teddy
-   - mit actuated table
+* 2) related work
 
-** ems stuff
-   pose IO
-   affordance ++
+** controlling hand poses
+    #+CAPTION: Possessed Hand
+    #+ATTR_HTML: :alt possessed hand :title vertical :align left :width 90%
+    [[./img/possessedhand.png]]
 
+** imposed orientation
+    #+CAPTION: Pedestrian Cruise Control
+    #+ATTR_HTML: :alt cruise control :title vertical :align left :width 90%
+    [[./img/cruisecontrol.png]]
+
+** fluid interactions
+   [[http://www.cs.umd.edu/hcil/crossy/]]
+
+** gestures for interactive paper
+   [[https://www.cs.umd.edu/~francois/Papers/PapierCraft.pdf]]
 
 * 3) implementation
 ** pen and paper interface for input and output
@@ -72,7 +85,7 @@
 *** HASOMED EMS Machine
     8 Channels sharing upto 400 pulses per second
     #+CAPTION: EMS Machine
-    #+ATTR_HTML: :alt EMS machine :title EMS Machine :align left :width 30%
+    #+ATTR_HTML: :alt EMS machine :title EMS Machine :align left :width 60%
     [[./img/rehastim.png]]
 *** Pad Placement
     Horizontal axis
@@ -88,36 +101,56 @@
 *** handwriting recognition and spatial interactions
     tesseract
 *** closed control loop for output
-    non linear system
+    handling non-linear response
+
+#+BEGIN_HTML
+<video width="640" height="480" loop autoplay muted>
+  <source src="img/controlloop.mp4" type="video/mp4">
+</video>
+#+END_HTML
+
 *** Proportional Controller
     - Only one channel is active at a given time
     - signal intensity is mapped to min and max situmulation values
 *** Muscles explode
-    - more chaos then control
+    - chaos > control
+*** Spring Mass Model
+    #+CAPTION: a simple model for the arm
+    #+ATTR_HTML: :alt Spring Mass Model :title vertical :align left :width 90%
+    [[./img/spring-mass-model.png]]
 *** Finding a reliable range
-    - Active situmulation on both sides
-    - repetative testing, 3 stages
+    - Active sitimulation on both sides
+    - randomly testing for range of values
 *** On Paper
-   #+CAPTION: Sketches on Paper
+   #+CAPTION: test results on paper
    #+ATTR_HTML: :alt Range Sketches on Paper :title draw on paper :align left :width 90%
    [[./img/fotoScratch.jpg]]
 *** Analysis
    #+CAPTION: Angle Range Analysis
-   #+ATTR_HTML: :alt Angle Range :title range :align left :width 90%
+   #+ATTR_HTML: :alt Angle Range Analysis :title range :align left :width 90%
    [[./img/web-viz.png]]
 *** Hardware Limitations
-    - Anoto, 10 samples each second
-    - .1s delay
-    - adjust control loop to act for every 10 anoto samples
+    - Anoto, 70 samples each second
+    - 0.1 second delay
+    - adjust control loop to act for every 7 + ~3 anoto samples
+    - more consistent speed calculations
+*** Delay Compansation
+    Forward momentum
+    #+CAPTION: Control Loop in Action
+    #+ATTR_HTML: :alt Control Loop :title vertical :align left :width 90%
+    [[./img/loopAction.png]]
 *** Designing for the Human Operator at the end of the line
-    Additional channel for brake
-
+    - Dynamically Increasing pulse intensity
+    - A dedicated channel for brake
 
 * 4) user study
 ** study preparation
-   Selection of curves
-   #+CAPTION: User Setup
-   #+ATTR_HTML: :alt User Setup :align left :width 90%
+   - 8 participants (22-26 years of age)
+   - 8 preselected curves
+   - plotted twice in random order
+** study setup
+   #+CAPTION: user study setup
+   #+ATTR_HTML: :alt User Study Setup :align left :width 90%
    [[./img/userstudy/setup.png]]
 ** evaluation and results
    #+CAPTION: Results All
@@ -140,6 +173,7 @@
    wind tunnel
    filter design
 
+
 * 6) limitations and future work
 ** ems difficulties
    ems machines haven't seem much improvement
@@ -152,6 +186,7 @@
      compansate for orientation changes
 **** internal calibration
      adjust intensity with position feedback
+
 
 * 7) Discussion?
   Questions?
