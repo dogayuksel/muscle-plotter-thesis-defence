@@ -14,7 +14,7 @@
    - based on electrical muscle stimulation
    - produces spacial output
 
-** major project and the team
+** the team and major project
     #+CAPTION: Project Team
     #+ATTR_HTML: :alt Team :title Anoto :align left :width 80%
     [[./img/team.png]]
